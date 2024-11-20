@@ -1,12 +1,12 @@
 [versions]
 # The latest versions are available at https://lambdaurora.dev/tools/import_quilt.html
 minecraft = "1.20.1"
-quilt_mappings = "1.20.1+build.23"
-quilt_loader = "0.24.0"
+yarn_mappings = "1.20.1+build.10"
+fabric_loader = "0.16.9"
+fabric_api = "0.92.2+1.20.1"
 
-quilted_fabric_api = "7.3.1+0.89.3-1.20.1"
 modmenu = "7.2.2"
-midnightlib = "1.4.1-quilt"
+midnightlib = "1.4.1-fabric"
 explosive_enhancement = "1.2.2-1.20.x"
 yacl = "3.2.2+1.20-fabric"
 dummy = "QOOGkq3O"
@@ -14,11 +14,10 @@ moonlight = "fabric_1.20-2.11.12"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
-quilt_mappings = { module = "org.quiltmc:quilt-mappings", version.ref = "quilt_mappings" }
-quilt_loader = { module = "org.quiltmc:quilt-loader", version.ref = "quilt_loader" }
+yarn_mappings = { module = "net.fabricmc:yarn", version.ref = "yarn_mappings" }
+fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
+fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
 
-quilted_fabric_api = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api", version.ref = "quilted_fabric_api" }
-quilted_fabric_api_deprecated = { module = "org.quiltmc.quilted-fabric-api:quilted-fabric-api-deprecated", version.ref = "quilted_fabric_api" }
 modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 midnightlib = { module = "maven.modrinth:midnightlib", version.ref = "midnightlib" }
 explosive_enhancement = { module = "maven.modrinth:explosive-enhancement", version.ref = "explosive_enhancement" }
@@ -26,9 +25,5 @@ yacl = { module = "maven.modrinth:yacl", version.ref = "yacl" }
 dummy = { module = "maven.modrinth:mmmmmmmmmmmm", version.ref = "dummy" }
 moonlight = { module = "maven.modrinth:moonlight", version.ref = "moonlight" }
 
-# If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
-[bundles]
-quilted_fabric_api = ["quilted_fabric_api", "quilted_fabric_api_deprecated"]
-
 [plugins]
-quilt_loom = { id = "org.quiltmc.loom", version = "1.6.+" }
+fabric_loom = { id = "fabric-loom", version = "1.8.+" }
