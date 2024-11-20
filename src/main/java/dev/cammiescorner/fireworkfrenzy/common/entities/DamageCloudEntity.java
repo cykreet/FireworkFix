@@ -1,13 +1,14 @@
 package dev.cammiescorner.fireworkfrenzy.common.entities;
 
-import dev.cammiescorner.fireworkfrenzy.FireworkFrenzy;
-import net.minecraft.entity.*;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.damage.DamageType;
-import net.minecraft.registry.Holder;
-import net.minecraft.world.World;
-
 import java.util.List;
+
+import dev.cammiescorner.fireworkfrenzy.FireworkFrenzy;
+import net.minecraft.entity.AreaEffectCloudEntity;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.EntityPose;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.world.World;
 
 public class DamageCloudEntity extends AreaEffectCloudEntity {
 	public DamageCloudEntity(EntityType<? extends AreaEffectCloudEntity> entityType, World world) {

@@ -5,7 +5,6 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.explosion.Explosion;
 import net.superkat.explosiveenhancement.ExplosiveEnhancement;
 import net.superkat.explosiveenhancement.ExplosiveEnhancementClient;
 import net.superkat.explosiveenhancement.api.ExplosiveApi;
@@ -13,7 +12,7 @@ import net.superkat.explosiveenhancement.api.ExplosiveApi;
 public class ExplosiveEnhancementCompat {
 	public static void spawnEnhancedBooms(World world, double x, double y, double z, float power) {
 		boolean isUnderWater = false;
-		BlockPos pos = BlockPos.create(x, y, z);
+		BlockPos pos = new BlockPos((int)x, (int)y, (int)z);
 
 		if(ExplosiveEnhancementClient.config.underwaterExplosions && world.getFluidState(pos).isIn(FluidTags.WATER)) {
 			isUnderWater = true;
