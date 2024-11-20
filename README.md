@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://modrinth.com/mod/qsl"><img src="https://raw.githubusercontent.com/intergrav/devins-badges/v3/assets/cozy/requires/quilt-standard-libraries_64h.png" width="311" height="64" title="Quilt Standard Libraries" alt="Quilt Standard Libraries"></a>
+    <img alt="fabric-api" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/requires/fabric-api_64h.png">
 </p>
 
 ---
