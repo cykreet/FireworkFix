@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "group": "dev.cammiescorner",
+  "id": "fireworkfrenzy",
+  "version": "${version}",
+  "name": "Firework Frenzy",
+  "description": "An overhaul to Firework Rockets and how the Crossbow makes use of them",
+  "authors": [
+    "Cammie",
+    "Up"
+  ],
+  "contact": {
+    "homepage": "https://cammiescorner.dev",
+    "issues": "https://github.com/CammiePone/FireworkFix/issues",
+    "sources": "https://github.com/CammiePone/FireworkFix"
+  },
+  "license": "Custom",
+  "icon": "assets/fireworkfrenzy/icon.png",
+  "entrypoints": {
+    "main": ["dev.cammiescorner.fireworkfrenzy.FireworkFrenzy"],
+    "client": ["dev.cammiescorner.fireworkfrenzy.client.FireworkFrenzyClient"],
+    "modmenu": ["dev.cammiescorner.fireworkfrenzy.common.compat.FireworkFrenzyModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "java": ">=17",
+    "fabric": ">=0.92.0",
+    "midnightlib": ">=1.4.0"
+  },
+  "access_widener": "fireworkfrenzy.accesswidener",
+  "mixins": ["fireworkfrenzy.mixins.json"]
+}

@@ -34,7 +34,7 @@ public abstract class PlayerEntityMixin extends LivingEntity implements BlastJum
 		}
 	}
 
-	@ModifyReturnValue(method = "getAirSpeed", at = @At("RETURN"))
+	@ModifyReturnValue(method = "getOffGroundSpeed", at = @At("RETURN"))
 	public float fireworkfrenzy$airSpeed(float original) {
 		if(isBlastJumping())
 			return (float) (original * FireworkFrenzyConfig.airStrafingMultiplier);
